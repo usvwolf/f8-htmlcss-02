@@ -1,0 +1,780 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Poppins, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* =================== Common =================== */
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    max-width: 100%;
+}
+
+.btn {
+    width: 118px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    background: #171100;
+    border-radius: 24.5px;
+}
+
+.btn-active {
+    background: #ffb900;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pos {
+    display: flex;
+    gap: 6px;
+    margin-top: 28px;
+}
+
+.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+
+.dot-active {
+    background: #ffb900;
+}
+
+/* =================== Header =================== */
+.header {
+    position: sticky;
+    top: -24px;
+    z-index: 1;
+    padding-top: 24px;
+    background: #fffcf4;
+}
+
+.header .navbar {
+    display: flex;
+    padding: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .row-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .row-menu .menu {
+    margin-right: 70px;
+}
+
+.navbar .row-menu .menu-item {
+    position: relative;
+    margin-left: 42px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+    color: #5f5b53;
+}
+
+.navbar .row-menu .menu-item:first-child {
+    padding-left: 0;
+}
+
+.navbar .row-menu .menu-item:hover {
+    color: #171100;
+    font-weight: 600;
+}
+
+.navbar .row-menu .menu-item:hover::after {
+    position: absolute;
+    content: "";
+    bottom: calc(1.5px - 6px);
+    left: 1px;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+
+.navbar .btn-header {
+    font-size: 16px;
+    width: 144px;
+}
+
+/* =================== Hero =================== */
+.hero {
+    padding: 52px 0 65px;
+    height: calc(900px - 86px);
+    background: #fffcf4;
+}
+
+/* =================== Hero > Image Group =================== */
+.hero .img-group {
+    position: relative;
+}
+
+.hero .hero-image {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero .img-group .column {
+    position: absolute;
+    bottom: 48px;
+    left: 300px;
+    width: 270px;
+    height: 244px;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.hero .img-group .course-list {
+    padding: 24px;
+}
+
+.hero .img-group .course-item {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.hero .img-group .course-item:first-child {
+    margin-top: 0;
+}
+
+.hero .img-group .info {
+    margin-left: 16px;
+}
+
+.hero .img-group .qty {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.hero .img-group .name {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+/* =================== Hero > Body =================== */
+
+.hero .body {
+    width: 470px;
+}
+
+.hero .body .title {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.hero .body .body-desc {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+/* =================== Hero > Button Group =================== */
+
+.hero .btn-group {
+    display: flex;
+    margin-top: 38px;
+    align-items: center;
+}
+
+.hero .btn-group .cta-btn {
+    width: 180px;
+    height: 64px;
+    background: #ffb900;
+    border-radius: 32px;
+    font-size: 1.8rem;
+    line-height: 64px;
+    color: #ffffff;
+}
+
+.hero .btn-group .play {
+    margin-left: 28px;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    border-radius: 50%;
+}
+
+.hero .btn-group img {
+    margin: auto;
+}
+
+.hero .btn-group .desc {
+    margin-left: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+/* =================== Hero > Info Group =================== */
+
+.hero .info-group {
+    margin-top: 48px;
+}
+
+.hero .info-group .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.hero .info-group .num-list {
+    display: flex;
+    margin-top: 8px;
+}
+
+.hero .info-group .num-item {
+    display: flex;
+    margin-right: 28px;
+    align-items: baseline;
+}
+
+.hero .info-group .num-item .desc {
+    margin-left: 14px;
+}
+
+.hero .info-group .num {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+}
+
+/* =================== Courses =================== */
+
+.courses {
+    margin-top: 200px;
+}
+
+/* =================== Courses > Row Top =================== */
+
+.courses .row-top .info {
+    width: 458px;
+}
+
+.courses .row-top .title {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.courses .row-top .info-desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.courses .row-top .btn-group {
+    display: flex;
+    gap: 16px;
+}
+
+.courses .row-top .scroll-btn:hover {
+    opacity: 0.5;
+}
+
+/* =================== Courses > Row Bottom =================== */
+
+.courses .row-bottom {
+    margin-top: 55px;
+}
+
+.courses .row-bottom {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+
+.courses .row-bottom .course-item {
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.courses .row-bottom .thumb {
+    height: 278px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.courses .row-bottom .body {
+    padding: 16px 22px 22px;
+}
+
+.courses .row-bottom .sub-title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.courses .row-bottom .point-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.courses .row-bottom .point {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #fea31b;
+}
+
+.courses .row-bottom .thumb-desc {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.courses .row-bottom .cta-group {
+    margin-top: 12px;
+}
+
+.courses .row-bottom .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+/* =================== Quote =================== */
+
+.quote {
+    margin-top: 200px;
+    height: 380px;
+    background: #2e2100;
+}
+
+.quote .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* =================== Quote > Info =================== */
+
+.quote .info {
+    width: 13.59%;
+    height: 100%;
+}
+
+.quote .info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.quote .info .name {
+    display: inline-block;
+    margin-top: 18px;
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #f7f7f7;
+}
+
+.quote .info .desc {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb3;
+}
+
+/* =================== Quote > Script =================== */
+
+.quote .script {
+    width: 65.81%;
+}
+
+.quote .script .script-content {
+    margin-top: -2.5px;
+    padding-left: 30px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
+}
+
+/* =================== CTA - Common =================== */
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta .title {
+    font-family: "Sen";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.cta .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.cta .btn {
+    margin-top: 32px;
+    display: inline-block;
+    width: 137px;
+    border-radius: 26px;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+/* =================== CTA - Outcomes =================== */
+.cta-outcomes {
+    height: 438px;
+    margin-top: 200px;
+}
+
+.cta-outcomes .img-block {
+    display: flex;
+    position: relative;
+    width: 570px;
+}
+
+.cta-outcomes .img {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.cta-outcomes .img-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.cta-outcomes .img-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.cta-outcomes .body {
+    padding: 58px 0;
+    width: 470px;
+}
+
+/* =================== CTA - Outcomes =================== */
+.cta-next-step {
+    margin-top: 200px;
+    height: 440px;
+}
+
+.cta-next-step .img-block {
+    display: flex;
+    position: relative;
+    width: 470px;
+}
+
+.cta-next-step .img {
+    width: 470px;
+    height: 440px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.cta-next-step .body {
+    padding: 71px 0;
+    width: 570px;
+}
+
+/* =================== Blog =================== */
+
+.blog {
+    margin-top: 200px;
+    padding: 96px 0 96px;
+    background: #fffcf4;
+}
+
+.blog .body {
+    /* display: flex; */
+}
+
+.blog .row-1 {
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.blog .row-1 .title {
+    font-family: "Sen";
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #130606;
+}
+
+.blog .row-1 .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    text-align: center;
+
+    color: #696262;
+}
+
+.blog .row-2 {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.blog .row-2 .img-group {
+    background-color: #fff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.blog .row-2 img {
+    width: 370px;
+    max-width: 100%;
+    height: 250px;
+    border-radius: 16px 16px 0px 0px;
+    object-fit: cover;
+}
+
+.blog .row-2 .desc-group {
+    padding: 20px 20px 28px;
+}
+
+.blog .row-2 .desc {
+    margin-left: calc(-1 * (-4px - 6px));
+    --line-height: 26px;
+    position: relative;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: var(--line-height);
+    color: #5f5b53;
+}
+
+.blog .row-2 .desc::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: calc(-4px - 6px);
+    bottom: calc(var(--line-height) / 2 + 0.5px);
+    transform: translateY(50%);
+    border-radius: 50%;
+    background: #ffb900;
+}
+
+.blog .row-2 .separate {
+    display: inline-block;
+    width: 160px;
+    height: 1px;
+    background: #e2dfda;
+    border-radius: 0.5px;
+}
+
+.blog .row-2 .sub-title {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #171100;
+}
+
+.blog .row-2 .btn {
+    margin-top: 12px;
+    display: inline-block;
+}
+
+.blog .pos {
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30px;
+}
+
+/* =================== Footer =================== */
+
+.footer {
+    height: 428px;
+    background: #2e2100;
+}
+
+.footer .body {
+    padding: 96px 0px 28px;
+}
+
+.footer .row-top {
+    display: flex;
+}
+
+.footer .column-1 {
+    width: 267px;
+}
+
+.footer .column-1 .desc {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.footer .column-1 .icon-group {
+    margin-top: 18px;
+}
+
+.footer .column-1 .icon {
+    margin-left: 18px;
+}
+
+.footer .column-1 .icon:first-child {
+    margin-left: 0;
+}
+
+.footer .column-2 {
+    margin-left: 145px;
+}
+
+.footer .column-3,
+.footer .column-4 {
+    margin-left: 130px;
+}
+
+.footer .column-4 {
+    width: 231px;
+}
+
+.footer .sub-title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
+.footer .separate-col {
+    display: inline-block;
+    margin-top: 14px;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+}
+
+.footer .link-group {
+    margin-top: 28px;
+}
+
+.footer .link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.footer li {
+    margin-top: 12px;
+}
+
+b {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #fff;
+}
+
+.footer .separate-row {
+    display: inline-block;
+    margin-top: 38px;
+    width: 100%;
+    height: 1px;
+    background: #59554b;
+}
+
+.footer .copyright {
+    margin-top: 28px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #807d74;
+}
